@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "@tencent-connect/qqbot-nodejs": "1.0.4",
+    "@tencent-connect/qqbot-connector": "1.2.0",
+    "qrcode": "1.5.4"
+  }
+}

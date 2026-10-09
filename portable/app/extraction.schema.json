@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DDL notification extraction",
+  "type": "object",
+  "required": ["items", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "deadline_at", "confidence", "source_type"],
+        "additionalProperties": false,
+        "properties": {
+          "title": {"type": "string", "minLength": 1, "maxLength": 200},
+          "category": {"type": "string"},
+          "deadline_at": {"type": "string", "format": "date-time"},
+          "start_at": {"type": ["string", "null"], "format": "date-time"},
+          "location": {"type": "string"},
+          "action": {"type": "string"},
+          "contact": {"type": "string"},
+          "source_type": {"enum": ["qq_text", "qq_image", "qq_file", "official_web", "manual"]},
+          "source_url": {"type": "string"},
+          "source_raw": {"type": "string", "maxLength": 4000},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "priority": {"enum": ["high", "medium", "low"]}
+        }
+      }
+    },
+    "questions": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+node_modules/
+data/
+personal-backup/
+*.sqlite3*
+*.db
+*.dpapi
+qq_push.json
+delivery.json
+deployment.json
+installed.json
+.env*
+*.log
