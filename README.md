@@ -13,9 +13,6 @@
 ![QQ 对话](docs/screenshots/qq-chat.png)
 ![图片识别模拟](docs/screenshots/image-result.png)
 
-### 手机展示
-<img src="docs/screenshots/mobile-overview.png" alt="手机总览" width="390">
-
 ## 核心功能
 
 - SQLite 持久化，任务增删改查、完成、软删除恢复、重复事项与审计。
@@ -68,7 +65,7 @@ python -m unittest test_deploy -v
 | --- | --- |
 | `docs/index.html` | 可直接打开的完整交互演示 |
 | `docs/gallery.html` | 截图与架构展示页 |
-| `docs/screenshots/` | 桌面、手机、QQ、部署、任务和架构截图 |
+| `docs/screenshots/` | 桌面、QQ、部署、任务和架构截图 |
 | `portable/app/` | 运行源码与回复规范 |
 | `portable/` | Windows 安装、自检、QQ 配置和导出入口 |
 | `scripts/refresh_manifest.py` | 更新安装文件 SHA-256 校验清单 |
